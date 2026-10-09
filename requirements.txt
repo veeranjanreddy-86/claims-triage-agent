@@ -1,0 +1,12 @@
+# Runtime
+pydantic>=2.6,<3
+fastapi>=0.110
+uvicorn>=0.29
+# Dev / test
+pytest>=8
+httpx>=0.27
+ruff>=0.5
+# Optional (not needed for tests):
+#   openai>=1.40    -> LLM_PROVIDER=openai | azure
+#   boto3>=1.34     -> LLM_PROVIDER=bedrock
+#   mlflow>=2.14    -> MLFLOW_TRACKING_URI=...
