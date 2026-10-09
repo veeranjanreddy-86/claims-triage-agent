@@ -1,0 +1,547 @@
+{
+  "metrics": {
+    "scenarios": 21,
+    "action_accuracy": 0.9524,
+    "tool_precision": 1.0,
+    "tool_recall": 0.9833,
+    "guardrail_accuracy": 1.0,
+    "avg_steps": 3.71,
+    "avg_tool_calls": 2.81,
+    "mean_latency_ms": 1.87
+  },
+  "results": [
+    {
+      "id": "S01",
+      "claim_id": "CLM-1001",
+      "expected_action": "resubmit_corrected_claim",
+      "action": "resubmit_corrected_claim",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 2.643
+    },
+    {
+      "id": "S02",
+      "claim_id": "CLM-1002",
+      "expected_action": "resubmit_corrected_claim",
+      "action": "resubmit_corrected_claim",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 2.205
+    },
+    {
+      "id": "S03",
+      "claim_id": "CLM-1003",
+      "expected_action": "resubmit_corrected_claim",
+      "action": "resubmit_corrected_claim",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 1.898
+    },
+    {
+      "id": "S04",
+      "claim_id": "CLM-1004",
+      "expected_action": "file_appeal",
+      "action": "file_appeal",
+      "status": "completed",
+      "expected_tools": [
+        "check_prior_auth_status",
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "tools": [
+        "check_prior_auth_status",
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 5,
+      "tool_calls": 4,
+      "latency_ms": 2.512
+    },
+    {
+      "id": "S05",
+      "claim_id": "CLM-1005",
+      "expected_action": "request_prior_auth",
+      "action": "request_prior_auth",
+      "status": "completed",
+      "expected_tools": [
+        "check_prior_auth_status",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "tools": [
+        "check_prior_auth_status",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 2.037
+    },
+    {
+      "id": "S06",
+      "claim_id": "CLM-1006",
+      "expected_action": "write_off_review",
+      "action": "write_off_review",
+      "status": "completed",
+      "expected_tools": [
+        "check_prior_auth_status",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "tools": [
+        "check_prior_auth_status",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 3.383
+    },
+    {
+      "id": "S07",
+      "claim_id": "CLM-1007",
+      "expected_action": "file_appeal",
+      "action": "file_appeal",
+      "status": "completed",
+      "expected_tools": [
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 5,
+      "tool_calls": 4,
+      "latency_ms": 2.487
+    },
+    {
+      "id": "S08",
+      "claim_id": "CLM-1008",
+      "expected_action": "write_off_review",
+      "action": "write_off_review",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 1.736
+    },
+    {
+      "id": "S09",
+      "claim_id": "CLM-1009",
+      "expected_action": "file_appeal",
+      "action": "file_appeal",
+      "status": "completed",
+      "expected_tools": [
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 5,
+      "tool_calls": 4,
+      "latency_ms": 2.436
+    },
+    {
+      "id": "S10",
+      "claim_id": "CLM-1010",
+      "expected_action": "write_off_review",
+      "action": "write_off_review",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 1.831
+    },
+    {
+      "id": "S11",
+      "claim_id": "CLM-1011",
+      "expected_action": "write_off_review",
+      "action": "write_off_review",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 3,
+      "tool_calls": 2,
+      "latency_ms": 1.179
+    },
+    {
+      "id": "S12",
+      "claim_id": "CLM-1012",
+      "expected_action": "write_off_review",
+      "action": "write_off_review",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 1.839
+    },
+    {
+      "id": "S13",
+      "claim_id": "CLM-1013",
+      "expected_action": "request_prior_auth",
+      "action": "request_prior_auth",
+      "status": "completed",
+      "expected_tools": [
+        "check_prior_auth_status",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "tools": [
+        "check_prior_auth_status",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 2.062
+    },
+    {
+      "id": "S14",
+      "claim_id": "CLM-1014",
+      "expected_action": "file_appeal",
+      "action": "file_appeal",
+      "status": "completed",
+      "expected_tools": [
+        "check_prior_auth_status",
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "tools": [
+        "check_prior_auth_status",
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 5,
+      "tool_calls": 4,
+      "latency_ms": 2.377
+    },
+    {
+      "id": "S15",
+      "claim_id": "CLM-1015",
+      "expected_action": "resubmit_corrected_claim",
+      "action": "resubmit_corrected_claim",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 1.774
+    },
+    {
+      "id": "S16",
+      "claim_id": "CLM-1016",
+      "expected_action": "file_appeal",
+      "action": "file_appeal",
+      "status": "completed",
+      "expected_tools": [
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction",
+        "prompt_injection"
+      ],
+      "guardrails": [
+        "phi_redaction",
+        "prompt_injection"
+      ],
+      "steps": 5,
+      "tool_calls": 4,
+      "latency_ms": 2.47
+    },
+    {
+      "id": "S17",
+      "claim_id": "CLM-1001",
+      "expected_action": null,
+      "action": null,
+      "status": "refused",
+      "expected_tools": [],
+      "tools": [],
+      "expected_guardrails": [
+        "refusal"
+      ],
+      "guardrails": [
+        "refusal"
+      ],
+      "steps": 0,
+      "tool_calls": 0,
+      "latency_ms": 0.15
+    },
+    {
+      "id": "S18",
+      "claim_id": "CLM-1007",
+      "expected_action": null,
+      "action": null,
+      "status": "refused",
+      "expected_tools": [],
+      "tools": [],
+      "expected_guardrails": [
+        "refusal"
+      ],
+      "guardrails": [
+        "refusal"
+      ],
+      "steps": 0,
+      "tool_calls": 0,
+      "latency_ms": 0.116
+    },
+    {
+      "id": "S19",
+      "claim_id": "CLM-9999",
+      "expected_action": "escalate_to_human",
+      "action": "escalate_to_human",
+      "status": "completed",
+      "expected_tools": [
+        "lookup_claim"
+      ],
+      "tools": [
+        "lookup_claim"
+      ],
+      "expected_guardrails": [],
+      "guardrails": [],
+      "steps": 2,
+      "tool_calls": 1,
+      "latency_ms": 0.561
+    },
+    {
+      "id": "S20",
+      "claim_id": "CLM-1017",
+      "expected_action": "file_appeal",
+      "action": "write_off_review",
+      "status": "completed",
+      "expected_tools": [
+        "draft_appeal_summary",
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 1.792
+    },
+    {
+      "id": "S21",
+      "claim_id": "CLM-1018",
+      "expected_action": "resubmit_corrected_claim",
+      "action": "resubmit_corrected_claim",
+      "status": "completed",
+      "expected_tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "tools": [
+        "get_denial_reason_policy",
+        "lookup_claim",
+        "search_policy_docs"
+      ],
+      "expected_guardrails": [
+        "phi_redaction"
+      ],
+      "guardrails": [
+        "phi_redaction"
+      ],
+      "steps": 4,
+      "tool_calls": 3,
+      "latency_ms": 1.82
+    }
+  ]
+}
